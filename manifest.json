@@ -1,0 +1,23 @@
+{
+
+  "manifest_version": 2,
+  "name": "Yandex.Music - No Ads",
+  "version": "1.0",
+
+  "description": "Skip ads",
+
+  "applications": {
+    "gecko": {
+      "id": "dsfmngfdngldfkngwpoanmksmgjsdfmsdkfjosisiodjhsdf",
+      "strict_min_version": "45.0"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://music.yandex.ru/*"],
+      "js": ["index.js"]
+    }
+  ]
+
+}
